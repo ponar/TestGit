@@ -10,6 +10,8 @@ public class Main {
 		System.out.println("To jest g³ówna klasa ");
 		System.out.println("Aktualna data jest dzisiaj:");
 		metoda();
+		//
+		my_version();
 	}
 	//
 	public static void metoda(){
@@ -18,7 +20,11 @@ public class Main {
 		SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
 		String date = DATE_FORMAT.format(today);
 		System.out.println("Dzisiaj jest: " + date);
-		
+		//
+	}
+	//sprawdzenie wersji javy
+	public static void my_version(){
+		System.out.println(System.getProperty("java.version"));
 	}
 
 }
